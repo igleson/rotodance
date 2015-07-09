@@ -60,21 +60,23 @@ app.config(['$stateProvider', '$urlRouterProvider',
 
 app.controller('videosController', function ($scope, $stateParams, $location) {
 
+    $scope.data = {}
+    $scope.data.authorId = $stateParams.authorId;
+    $scope.data.allvideos = videos;
+
     var Video = Parse.Object.extend("Video");
     var query = new Parse.Query(Video);
     query.find({
         success: function (results) {
-            console.log(results)
             for (var i = 0; i < results.length; i++) {
+                $scope.data.allvideos.push(results[i].attributes)
+                console.log($scope.data.allvideos.length)
             }
+            $scope.$apply()
         },
         error: function (error) {
             alert("Error: " + error.code + " " + error.message);
         }});
-
-    $scope.data = {}
-    $scope.data.authorId = $stateParams.authorId;
-    $scope.data.allvideos = videos;
 
     $scope.data.baseUrl = '/videos/page/';
 

@@ -52,12 +52,11 @@
       <file leaf-file-name="videos.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/videos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46640316" vertical-offset="446" max-vertical-offset="2484">
-              <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.69762844" vertical-offset="446" max-vertical-offset="2610">
+              <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
               <folding>
                 <element signature="e#83#171#0" expanded="false" />
                 <element signature="e#832#998#0" expanded="false" />
-                <element signature="e#1044#1156#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -577,12 +576,12 @@
       <workItem from="1422379186766" duration="8625000" />
       <workItem from="1422451443034" duration="3000" />
       <workItem from="1422451470299" duration="20556000" />
-      <workItem from="1436455491543" duration="12656000" />
+      <workItem from="1436455491543" duration="13614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60669000" />
+    <option name="totallyTimeSpent" value="61627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1863" height="1204" extended-state="6" />
@@ -662,7 +661,6 @@
           <folding>
             <element signature="e#83#171#0" expanded="false" />
             <element signature="e#832#998#0" expanded="false" />
-            <element signature="e#1044#1156#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -721,7 +719,6 @@
           <folding>
             <element signature="e#83#171#0" expanded="false" />
             <element signature="e#832#998#0" expanded="false" />
-            <element signature="e#1044#1156#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -771,7 +768,6 @@
           <folding>
             <element signature="e#83#171#0" expanded="false" />
             <element signature="e#832#998#0" expanded="false" />
-            <element signature="e#1044#1156#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -821,7 +817,6 @@
           <folding>
             <element signature="e#83#171#0" expanded="false" />
             <element signature="e#832#998#0" expanded="false" />
-            <element signature="e#1044#1156#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -972,12 +967,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/videos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46640316" vertical-offset="446" max-vertical-offset="2484">
-          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.69762844" vertical-offset="446" max-vertical-offset="2610">
+          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
           <folding>
             <element signature="e#83#171#0" expanded="false" />
             <element signature="e#832#998#0" expanded="false" />
-            <element signature="e#1044#1156#0" expanded="false" />
           </folding>
         </state>
       </provider>
