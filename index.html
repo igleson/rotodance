@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Analysis Blog</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/data.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="https://apis.google.com/js/client.js"></script>
+
+    <script src="js/angular-ui-router.min.js"></script>
+    <script src="js/videos.js"></script>
+    <script src="js/cors_upload.js"></script>
+    <script src="js/upload.js"></script>
+
+    <script>
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '469025599925059',
+                xfbml      : true,
+                version    : 'v2.4'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body ng-app="myApp" onload="auth()" style="background-color:#fff5ee">
+
+<a href ui-sref="videosPage">
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>ROTODANCE</h1>
+                        <hr class="small">
+                        <!--<span class="subheading">ROTODANCE</span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</a>
+
+
+<div class="container">
+    <div ui-view></div>
+</div>
+
+</body>
+
+</html>

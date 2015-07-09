@@ -1,0 +1,51 @@
+.team-member {
+    margin-bottom: 1.5em;
+    text-align: left;
+    border-radius: 0.5em;
+    box-shadow: 0.5em 0.5em 0.5em #888888;
+    background: #EEEEEE;
+}
+
+.team-member:hover {
+    background: #DDDDDD;
+    cursor: pointer;
+}
+
+.team-member img {
+    margin: 0.5em;
+    border: 7px solid #fff;
+    float: left;
+}
+
+.team-member p {
+    margin: 0.5em;
+    margin-right: 0.5em;
+    font-size: large;
+    text-align: justify;
+}
+
+ul.social-buttons {
+    text-align: center;
+}
+
+ul.social-buttons li a {
+    margin-bottom: 0.5em;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #AAAAAA;
+}

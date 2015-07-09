@@ -1,0 +1,33 @@
+<article ng-controller="videoController">
+
+    <div ng-show="data.video">
+        <div class="video-preview">
+            <h2 class="video-title">
+                {{ data.video.nome }}
+                <p>
+
+                <iframe ng-if="data.video.progress == 100" width="1200" height="680" ng-src="{{functions.embbedSrc()}}" frameborder="0" allowfullscreen></iframe>
+
+                <div ng-if="data.video.progress < 100">
+                    <h6 style="text-align: center; font-size: 70px; color: #777777">
+                        Vídeo ainda está em upload, por favor aguarde.
+                    </h6>
+                </div>
+
+
+                <div class="fb-share-button" data-layout="button_count"></div>
+            </h2>
+            <hr>
+        </div>
+
+
+
+    </div>
+
+    <div ng-show="!data.video">
+        <h6 style="text-align: center; font-size: 70px; color: #777777">
+            404! O videos que você procura não existe ou foi removido.
+        </h6>
+    </div>
+
+</article>

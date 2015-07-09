@@ -1,0 +1,14 @@
+authors = [
+    {name:'Igleson Freire', id:'igleson', imgSrc:'img/igleson.jpg',
+        twitter:'', facebook:'', linkedin:'https://www.linkedin.com/pub/igleson-freire/a5/73b/a9a', github:'https://github.com/igleson',
+        bio:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida a enim eu rutrum. Nullam et ullamcorper felis. Donec interdum turpis vel lectus ornare, at dapibus mi maximus. Quisque egestas suscipit odio, in porta augue convallis ut. Vestibulum venenatis porttitor nisi, luctus porttitor nuncfacilisis et. Mauris nec massa et mauris laoreet rhoncus. Praesent tincidunt posuere sodales. Donec vitae molestie turpis, quis rutrum odio. Maecenas non vulputate ligula, a hendrerit orci. Nunc maximus id enim a rhoncus. Nam ornare laoreet magna gravida pretium. Morbi lobortis elit sit amet quam tincidunt, sit amet dictum est imperdiet. Nulla facilisi.'},
+    {name:'Tales Tenório', id:'tales', imgSrc:'img/igleson.jpg', twitter:'', facebook:'', linkedin:'', github:'',
+        twitter:'', facebook:'', linkedin:'https://www.linkedin.com/pub/igleson-freire/a5/73b/a9a', github:'https://github.com/igleson',
+        bio:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida a enim eu rutrum. Nullam et ullamcorper felis. Donec interdum turpis vel lectus ornare, at dapibus mi maximus. Quisque egestas suscipit odio, in porta augue convallis ut. Vestibulum venenatis porttitor nisi, luctus porttitor nuncfacilisis et. Mauris nec massa et mauris laoreet rhoncus. Praesent tincidunt posuere sodales. Donec vitae molestie turpis, quis rutrum odio. Maecenas non vulputate ligula, a hendrerit orci. Nunc maximus id enim a rhoncus. Nam ornare laoreet magna gravida pretium. Morbi lobortis elit sit amet quam tincidunt, sit amet dictum est imperdiet. Nulla facilisi.'},
+    {name:'Andryw Marques', id:'andryw', imgSrc:'img/igleson.jpg', twitter:'', facebook:'', linkedin:'', github:'',
+        twitter:'', facebook:'', linkedin:'https://www.linkedin.com/pub/igleson-freire/a5/73b/a9a', github:'https://github.com/igleson',
+        bio:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida a enim eu rutrum. Nullam et ullamcorper felis. Donec interdum turpis vel lectus ornare, at dapibus mi maximus. Quisque egestas suscipit odio, in porta augue convallis ut. Vestibulum venenatis porttitor nisi, luctus porttitor nuncfacilisis et. Mauris nec massa et mauris laoreet rhoncus. Praesent tincidunt posuere sodales. Donec vitae molestie turpis, quis rutrum odio. Maecenas non vulputate ligula, a hendrerit orci. Nunc maximus id enim a rhoncus. Nam ornare laoreet magna gravida pretium. Morbi lobortis elit sit amet quam tincidunt, sit amet dictum est imperdiet. Nulla facilisi.'}
+];
+
+
+videos = [];

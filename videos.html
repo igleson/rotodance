@@ -1,0 +1,46 @@
+<div class="row" ng-controller="videosController">
+
+    <div ng-controller="uploadsController">
+
+        <input input="" type="file" id="file" class="button" accept="video/*">
+
+        <button onclick="uploadFile($('#file').get(0).files[0], $('#nome').val())">upload</button>
+
+        <input type="text" id="nome" placeholder="nome do vídeo">
+    </div>
+
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"
+         ng-show="(data.allvideos | slice:interface.init:interface.final).length">
+
+        <div class="video-preview" ng-repeat="video in data.allvideos | slice:interface.init:interface.final">
+            <a href ng-click="functions.seevideo($index)">
+                <h2 class="video-title"> {{ video.nome }} </h2>
+            </a>
+
+            <iframe ng-if="video.progress == 100" width="560" height="315" ng-src="{{functions.embbedSrc(video.id)}}"
+                    frameborder="0" allowfullscreen></iframe>
+
+            <div ng-if="video.progress < 100">
+                <h6 style="text-align: center; font-size: 70px; color: #777777">
+                    Vídeo ainda está em uplaod, por favor aguarde.
+                </h6>
+            </div>
+
+        </div>
+
+        <ul class="pager">
+            <li class="next">
+                <a href ng-show="interface.final < data.allvideos.length" ng-click="functions.nextPage()">Vídeos
+                    antigos &rarr;</a>
+            </li>
+            <li style="float: left;">
+                <a href ng-show="interface.page > 1" ng-click="functions.previousPage()">&larr; Novos videos </a>
+            </li>
+        </ul>
+    </div>
+    <div ng-show="!(data.allvideos | slice:interface.init:interface.final).length">
+        <h6 style="text-align: center; font-size: 70px; color: #777777">
+            404! Não existem mais videos
+        </h6>
+    </div>
+</div>
