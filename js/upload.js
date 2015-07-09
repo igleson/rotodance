@@ -2,6 +2,9 @@ var client_id = "549651560425-r448kpdiie2ban5qbthbreq7sqfse3pe.apps.googleuserco
 var scope = "https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube"
 var authorized = false
 
+
+
+
 auth = function() {
 	gapi.auth.authorize({client_id: client_id, scope: scope}, function(resp){
 		authorized = resp.access_token !== undefined
@@ -27,6 +30,7 @@ uploadFile = function(file, nome) {
     }
   };
   var result = {nome: nome}
+
   videos.splice(0, 0, result);
   var uploader = new MediaUploader({
 
@@ -61,8 +65,17 @@ uploadFile = function(file, nome) {
     onComplete: function(data) {
       var uploadResponse = JSON.parse(data);
       this.videoId = uploadResponse.id;
-      result.id = this.videoId;
+      result.videoId = this.videoId;
       console.log(this.videoId);
+
+
+
+    var Video = Parse.Object.extend("Video");
+    var video = new Video();
+    video.save(result).then(function(object) {
+        console.log(object)
+    })
+
     }.bind(this)
   });
   uploader.upload();

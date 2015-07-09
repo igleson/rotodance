@@ -60,6 +60,18 @@ app.config(['$stateProvider', '$urlRouterProvider',
 
 app.controller('videosController', function ($scope, $stateParams, $location) {
 
+    var Video = Parse.Object.extend("Video");
+    var query = new Parse.Query(Video);
+    query.find({
+        success: function (results) {
+            console.log(results)
+            for (var i = 0; i < results.length; i++) {
+            }
+        },
+        error: function (error) {
+            alert("Error: " + error.code + " " + error.message);
+        }});
+
     $scope.data = {}
     $scope.data.authorId = $stateParams.authorId;
     $scope.data.allvideos = videos;
@@ -103,10 +115,10 @@ app.controller('videosController', function ($scope, $stateParams, $location) {
 app.controller('videoController', function ($scope, $stateParams) {
 
     $scope.data = {}
-    $scope.data.id = $stateParams.title;
+    $scope.data.videoId = $stateParams.title;
 
     var byTitle = function (element) {
-        return element.id === $scope.data.id
+        return element.videoId === $scope.data.videoId
     }
 
     $scope.data.video = videos.filter(byTitle)[0];
