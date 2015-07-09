@@ -1,4 +1,4 @@
-var client_id = "549651560425-r448kpdiie2ban5qbthbreq7sqfse3pe.apps.googleusercontent.com"
+var client_id = "549651560425-uok7tpueb8l5nt985k5ovhn2s1udmgvl.apps.googleusercontent.com"
 var scope = "https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube"
 var authorized = false
 
